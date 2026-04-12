@@ -215,12 +215,3 @@ python app/app.py
 * GitHub Repository
 * Interactive Dash Web Application
 * Video Demonstration
-
----
-
-## 🚀 Future Improvements
-
-* Integration with real healthcare systems
-* Real-time data updates
-* Enhanced model performance and tuning
-* Expanded dataset for better generalization
