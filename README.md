@@ -103,13 +103,23 @@ This project aims to address these challenges using predictive modeling and pati
 
 ## 📁 Project Structure
 
-data/        → Raw and processed datasets
-notebooks/   → Jupyter notebooks for each phase
-src/         → Python scripts (clean implementation)
-models/      → Saved machine learning models
-app/         → Dash web application
-reports/     → Technical report
-docs/        → Video link and supporting files
+data/
+→ Contains training and testing datasets (train.csv, test.csv)
+
+src/
+→ Python scripts for data preparation, preprocessing, model training, and web application
+
+artifacts/
+→ Stores trained models and outputs (e.g., .pkl files, predictions, feature importance)
+
+notebooks/
+→ Jupyter notebooks for modeling and experimentation
+
+README.md
+→ Project documentation
+
+requirements.txt
+→ Python dependencies
 
 ---
 
@@ -117,70 +127,60 @@ docs/        → Video link and supporting files
 
 ### 🔹 Data Engineer
 
-* Data preprocessing and cleaning
-* Feature engineering
+* Prepare and clean data
 * Work in:
 
   * data/
-  * notebooks/01_data_understanding.ipynb
-  * notebooks/02_preprocessing.ipynb
-  * src/preprocessing.py
+  * src/prepare_data.py
+  * src/preprocess_data.py
 
 ---
 
 ### 🔹 Lead Classifier
 
-* Build and evaluate classification models
-* Hyperparameter tuning
+* Train and evaluate classification models
 * Work in:
 
-  * notebooks/03_classification.ipynb
   * src/train_models.py
-  * models/classification_model.pkl
+  * notebooks/modeling.ipynb
 
 ---
 
 ### 🔹 Segmentation Lead
 
-* Perform patient segmentation using K-Means (k = 3)
-* Interpret cluster results
+* Perform clustering using K-Means (k = 3)
 * Work in:
 
-  * notebooks/04_clustering.ipynb
-  * src/clustering.py
-  * models/kmeans_model.pkl
+  * notebooks/modeling.ipynb
+  * src/train_models.py
 
 ---
 
 ### 🔹 XAI Specialist
 
-* Perform SHAP analysis
-* Interpret model predictions
+* Perform SHAP analysis and interpret results
 * Work in:
 
-  * notebooks/05_xai.ipynb
-  * src/explainability.py
+  * notebooks/modeling.ipynb
+  * artifacts/feature_importance.csv
 
 ---
 
 ### 🔹 Web Developer
 
-* Develop Dash web application
-* Integrate trained models
-* Deploy application
+* Build and run Dash web application
 * Work in:
 
-  * app/app.py
-  * app/requirements.txt
+  * src/web_app.py
+  * notebooks/web_application.ipynb
 
 ---
 
 ### 🔹 Project Lead
 
-* Repository structure and management
-* Documentation and report compilation
-* Ensure consistency and quality
-* Final submission and links
+* Manage repository structure and workflow
+* Ensure proper documentation and consistency
+* Finalize submission and links
 
 ---
 
