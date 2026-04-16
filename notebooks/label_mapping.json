@@ -1,0 +1,7 @@
+{
+  "Gestational": 0,
+  "No Diabetes": 1,
+  "Pre-Diabetes": 2,
+  "Type 1": 3,
+  "Type 2": 4
+}
