@@ -138,3 +138,6 @@ def run_model(n_clicks, age, bmi, act, gender, hba1c, gluc, bp, fam):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+app = dash.Dash(__name__)
+server = app.server  
