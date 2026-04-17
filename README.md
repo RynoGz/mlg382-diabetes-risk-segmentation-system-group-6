@@ -1,3 +1,14 @@
+# Header for website
+---
+title: Diabetes Risk Assessment
+emoji: 🏥
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🩺 Diabetes Risk Segmentation & Decision Support System
 
 ## 📖 Project Overview
