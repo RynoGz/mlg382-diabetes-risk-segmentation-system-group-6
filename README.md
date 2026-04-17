@@ -1,3 +1,13 @@
+---
+title: Diabetes Risk Assessment
+emoji: 🏥
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🩺 Diabetes Risk Segmentation & Decision Support System
 
 ## 📖 Project Overview
@@ -23,7 +33,7 @@ This project aims to address these challenges using predictive modeling and pati
 ## 🎯 Objectives
 
 * Predict diabetes risk level (`diabetes_stage`)
-* Segment patients into meaningful risk categories
+* Segment patients into meaningful lifestyle-based personas
 * Identify key lifestyle factors influencing diabetes risk
 * Group patients based on lifestyle and health characteristics
 * Provide actionable insights through a web dashboard
@@ -86,25 +96,26 @@ This project aims to address these challenges using predictive modeling and pati
 * Identification of major lifestyle factors influencing diabetes risk
 * Clear grouping of patients into meaningful segments
 * Improved interpretability of model predictions using SHAP
+* The “High-Risk Inactive” group shows the highest proportion of Type 2 diabetes cases, highlighting the impact of lifestyle factors such as low physical activity and poor diet
 
 ---
 
 ## 🌐 Web Application
 
-👉 [Insert Render Link Here]
+https://huggingface.co/spaces/Alb05/diabetes-risk-assessment
 
 ---
 
 ## 🎥 Video Demonstration
 
-👉 [Insert Video / OneDrive Link Here]
+https://drive.google.com/file/d/1WnHjrQoyJExfJRZm1H6_GyZbefTAhb1s/view?usp=sharing
 
 ---
 
 ## 📁 Project Structure
 
 data/
-→ Contains training and testing datasets (train.csv, test.csv)
+→ Contains processed datasets (X_train, X_test, y_train, y_test, clustering data, and full preprocessed dataset)
 
 src/
 → Python scripts for data preparation, preprocessing, model training, and web application
@@ -128,51 +139,30 @@ requirements.txt
 ### 🔹 Data Engineer
 
 * Prepare and clean data
-* Work in:
-
-  * data/
-  * src/prepare_data.py
-  * src/preprocess_data.py
 
 ---
 
 ### 🔹 Lead Classifier
 
 * Train and evaluate classification models
-* Work in:
-
-  * src/train_models.py
-  * notebooks/modeling.ipynb
 
 ---
 
 ### 🔹 Segmentation Lead
 
 * Perform clustering using K-Means (k = 3)
-* Work in:
-
-  * notebooks/modeling.ipynb
-  * src/train_models.py
 
 ---
 
 ### 🔹 XAI Specialist
 
 * Perform SHAP analysis and interpret results
-* Work in:
-
-  * notebooks/modeling.ipynb
-  * artifacts/feature_importance.csv
 
 ---
 
 ### 🔹 Web Developer
 
 * Build and run Dash web application
-* Work in:
-
-  * src/web_app.py
-  * notebooks/web_application.ipynb
 
 ---
 
@@ -188,16 +178,9 @@ requirements.txt
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-repo-link.git
-cd diabetes-risk-segmentation-system
-
 ### 2. Install dependencies
 
-pip install -r requirements.txt
-
 ### 3. Run the application
-
-python app/app.py
 
 ---
 
