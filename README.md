@@ -1,3 +1,13 @@
+---
+title: Diabetes Risk Assessment
+emoji: 🏥
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🩺 Diabetes Risk Segmentation & Decision Support System
 
 ## 📖 Project Overview
@@ -92,13 +102,13 @@ This project aims to address these challenges using predictive modeling and pati
 
 ## 🌐 Web Application
 
-👉 [Insert Render Link Here]
+https://huggingface.co/spaces/Alb05/diabetes-risk-assessment
 
 ---
 
 ## 🎥 Video Demonstration
 
-👉 [Insert Video / OneDrive Link Here]
+https://drive.google.com/file/d/1WnHjrQoyJExfJRZm1H6_GyZbefTAhb1s/view?usp=sharing
 
 ---
 
